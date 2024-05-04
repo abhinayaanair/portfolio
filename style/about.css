@@ -29,6 +29,12 @@
     flex-direction: column;
     
 }
+#about{
+    background-color: #FFB400;
+}
+#about-nav{
+    color:#FFB400 ;
+}
 .navigation-bar{
     position: fixed;
     top:0;
