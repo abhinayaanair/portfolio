@@ -103,7 +103,7 @@
         margin:0;
         margin-bottom: 20px;
         box-sizing: border-box;
-        background-color: rgb(17,17,17);
+       
     }
 
     .header{
@@ -181,5 +181,14 @@
     .navigation-bar nav ul li i {
         color: white;
         font-size: inherit;
+    }
+    body{
+        background-color:rgb(17,17,17) ;
+        padding: 0.6rem;
+    }
+    .sidebar li{
+        line-height: 0.5rem;
+        margin: 0 0 -5px 20px; 
+        padding: 0;
     }
 }

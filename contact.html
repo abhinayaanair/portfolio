@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,47 +16,47 @@
 
   
     <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/portfolio.css">
+    <link rel="stylesheet" href="style/contact.css">
 </head>
 <body>
     <div class="main">
         <div class="content">
             <div class="header">
-                <h1>WORKS</h1>
-                <h2>MY <span>PORTFOLIO</span></h2>
+                <h1>CONTACT</h1>
+                <h2>GET IN <span>TOUCH</span></h2>
             </div>
            
-            <div class="grid-portfolio">
-             
-               <div class="grid-item"  onmouseenter="changeIt(0,'https://abhinayaanair.github.io/CloneWars/')" onmouseleave="changeAgain(0)"><div class="inner-grid-div"><img  src="https://www.india.com/wp-content/uploads/2020/08/IPL-Logo.jpg" alt=""></div></div>
-              
-               
-               <div class="grid-item" onmouseenter="changeIt(1,'https://abhinayaanair.github.io/SPOTIFY/')" onmouseleave="changeAgain(1)"><div class="inner-grid-div"><img  src="images/spotify.png" alt=""></div></div>
-              
-               
-               <div class="grid-item" onmouseenter="changeIt(2,'https://github.com/abhinayaanair/QUORA')" onmouseleave="changeAgain(2)"><div class="inner-grid-div"><img  src="images/quora.png" alt=""></div></div>
-              
-               <div class="grid-item" onmouseenter="changeIt(3,'https://abhinayaanair.github.io/YOUTUBE-CLONE/youtube.html')" onmouseleave="changeAgain(3)"><div class="inner-grid-div"><img  src="https://1000logos.net/wp-content/uploads/2017/05/Color-YouTube-logo.jpg" alt=""></div></div>
-              
-               
-               <div class="grid-item" onmouseenter="changeIt(4,'https://abhinayaanair.github.io/portfolio/')" onmouseleave="changeAgain(4)"><div class="inner-grid-div"><img  src="images/portfolio.png" alt=""></div></div>
-              
+            <div class="contact">
+                <div class="contact-text">
+                    <h2>DON'T BE SHY!</h2>
                    
-               <div class="grid-item" onmouseenter="changeIt(5,'https://abhinayaanair.github.io/countdown/')" onmouseleave="changeAgain(4)"><div class="inner-grid-div"><img  src="images/countdown.png" alt=""></div></div>
-              
-             
-             
-              
-<!--                
-               <div class="grid-item" onmouseenter="changeIt(6)" onmouseleave="changeAgain(6)"><div class="inner-grid-div"><img  src="" alt=""></div></div>
-              
-               
-               <div class="grid-item" onmouseenter="changeIt(7)" onmouseleave="changeAgain(7)"><div class="inner-grid-div"><img  src="" alt=""></div></div>
-              
-               
-               <div class="grid-item" onmouseenter="changeIt(8)" onmouseleave="changeAgain(8)"><div class="inner-grid-div"><img  src="" alt=""></div></div> -->
-              
-               
+                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    <br>
+                    <div class="mail-div contact-icon-div">
+                        <div class="icon-contact-div"><i class="fa-solid fa-envelope icon-contact"></i></div>
+                        <div><span>MAIL ME</span> <br> abhinayanair.work@gmail.com</div>
+                    </div>
+                    
+                    <div class="call-div contact-icon-div">
+                        <div class="icon-contact-div"><i class="fa-solid fa-phone icon-contact "></i></div>
+                        <div><span>CALL ME</span> <br> 7014757774</div>
+                    </div>
+                </div>
+                <div class="contact-form">
+
+                    <div class="input-div">
+                        <input type="text" placeholder="Your name">
+                        <input type="text" placeholder="Your email">
+                        <input type="text" placeholder="Your subject">
+                    </div>
+                    <div class="textarea-div">
+                        <textarea placeholder="Your message" name="" id="" cols="90" rows="10"></textarea>
+                    </div>
+
+                    <button>
+                        Send Message <i class="fa-solid fa-paper-plane paper-plane"></i>
+                    </button>
+                </div>
             </div>
 
             <div class="navigation-bar">
@@ -89,7 +89,6 @@
     </div>
 
     <script>
-        
         const sidebar=document.querySelector(".sidebar");
         const image=document.querySelector(".img")
         function showSidebar(){
@@ -101,28 +100,6 @@
             sidebar.style.display="none";
             image.style.visibility="visible";
         }
-        let originalContent = {};
-        let gridItems = document.querySelectorAll(".grid-item");
-        
-        for (let i = 0; i < gridItems.length; i++) {
-            originalContent[i] = gridItems[i].innerHTML;
-        }
-        
-        function changeIt(index,link) {
-            const innerdiv = gridItems[index].querySelector(".inner-grid-div");
-            
-            innerdiv.innerHTML = `<div style="display:flex;justify-content:center;align-item:center;margin-top:23%;"><a href="${link}" style="color:black;font-size:2rem;font-family:Poppins;text-decoration:none">CLICK</a></div>`;
-            gridItems[index].style.backgroundColor = "#FFB400";
-        }
-  
-        function changeAgain(index) {
-            gridItems[index].innerHTML = originalContent[index];
-            gridItems[index].style.backgroundColor = "transparent";
-        }
-  
-
-
-      
     </script>
 </body>
 </html>

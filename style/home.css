@@ -217,4 +217,8 @@
 .button{
     margin: 3.5rem;
 }
+body{
+    background-color:rgb(17,17,17) ;
+    padding: 0.6rem;
+}
 }

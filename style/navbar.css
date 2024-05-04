@@ -51,13 +51,14 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    /* background-color:rgba(37,37,37); */
+    background-color:rgba(37,37,37);
 }
 
 .sidebar li{
     width: 100%;
     color:white;
     margin-left: 2rem;
+    
 }
 #close{
    margin-left:75%;
@@ -85,4 +86,12 @@ color: white;
     height: 0.1px;
     width: 80%;
     background-color: grey;
+}
+
+@media (min-width: 200px) and (max-width: 480px)  {
+    .sidebar li{
+        line-height: 0.5rem;
+        margin: 0 0 0 20px; 
+        padding: 0;
+    }
 }
