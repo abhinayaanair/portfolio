@@ -7,7 +7,7 @@
 .main{
     width:100%;
     /* height:150vh; */
-/*     background-color:rgb(17,17,17); */
+    background-color:rgb(17,17,17);
     display: flex;
     color: white;
     overflow-x: hidden;
@@ -103,7 +103,7 @@
         margin:0;
         margin-bottom: 20px;
         box-sizing: border-box;
-        background-color: rgb(17,17,17);
+/*         background-color: rgb(17,17,17); */
     }
 
     .header{
