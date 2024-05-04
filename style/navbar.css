@@ -1,0 +1,87 @@
+.navigation-bar{
+    
+    height:100vh;
+    width:10%;
+    color: #B0B0B0;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+}
+
+.navigation-bar nav ul li i{
+    color:white;
+    z-index:10;
+    margin: 0.7rem 1.8rem 0.7rem 0;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #2B2A2A;
+}
+.navigation-bar nav ul li{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.hamburger-menu{
+    visibility: hidden;
+}
+
+.navigation-bar div{
+    display: flex;
+    justify-content: center;
+    align-self: start;
+    align-items: start;
+    height: 40px;
+    width: 40px;
+}
+
+.sidebar{
+   
+    background-color:rgba(37,37,37);
+    border: 2px solid pink;
+    position:fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width:100%;
+    z-index: 999;
+    backdrop-filter: blue(10px);
+    box-shadow:-10px 0 10px rgba(0,0,0,0.1);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+    color:white;
+    margin-left: 2rem;
+}
+#close{
+   margin-left:75%;
+
+}
+.sidebar a{
+font-family: "Poppins";
+width: 100%;
+text-decoration: none;
+margin: 1.5rem 0px;
+margin-left: -1.5rem;
+
+padding-left: 0;
+color: white;
+}
+.sidebar i{
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+.sidebar div{
+    align-self: center;
+    height: 0.1px;
+    width: 80%;
+    background-color: grey;
+}

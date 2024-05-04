@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Abhinaya Nair</title>
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/home.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/media.css">
+</head>
+
+<body>
+    <div class="main">
+        
+        <div class="img-div">
+            <img src="images/Untitled_design__3_-removebg-preview.png" class="yellowtrapez">
+            <img src="images/IMG_20240415_123955.jpg" class="img">
+        </div>
+
+        <div class="home-text-div">
+            <div class="intro-flex">
+                <div class="hyphen">&#8209;</div>
+                <div class="home-intro">
+                    <h1 class="text-uppercase">
+                        I'M ABHINAYA NAIR. <br>
+                        <span id="element">
+
+                        </span>
+
+                    </h1>
+                </div>
+            </div>
+
+            <div class="home-description">
+                <p class="open-sans-font">I'm a Bangalore-based web developer and AI enthusiast crafting innovative
+                    digital experiences, passionate about user-friendly interfaces, enriching lives through technology.
+                </p>
+            </div>
+            <div class="home-about-button">
+                <a class="button" href=<span class="button-text">More
+                    About Me <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="navigation-bar">
+            <nav>
+                <ul>
+                    <li class="house-li"><a href="index.html"><i class="fa-solid fa-house" id="house"></i></a></li>
+                    <li class="about-li"><a href="about.html"><i class="fa-solid fa-user" id="about"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-briefcase" id="portfolio"></i></a></i></li>
+                    <li><a href=""><i class="fa-solid fa-envelope" id="contact"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-pencil" id="blog"></i></a></li>
+                    
+                </ul>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><i class="fa-solid fa-xmark" id="close"></i></li>
+                    <li class="house-li" ><i class="fa-solid fa-house" id="house-nav"></i><a href="index.html" id="house-nav">Home</a></li>
+                    <div></div>
+                    <li class="about-li"><i class="fa-solid fa-user" id="about"></i><a href="about.html">About</a></li>
+                    <div></div>
+                    <li><i class="fa-solid fa-briefcase" id="portfolio"></i><a href="">Portfolio</a></i></li>
+                    <div></div>
+                    <li><i class="fa-solid fa-envelope" id="contact"></i><a href="">Contact</a></li>
+                    <div></div>
+                    <li><i class="fa-solid fa-pencil" id="blog"></i><a href="">Blog</a></li>
+                    <div></div>
+                   
+                </ul>
+            </nav>
+            <div onclick=showSidebar()><i class="fa-solid fa-bars hamburger-menu"></i></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['WEB DEVELOPER', 'AI DEVELOPER'],
+            typeSpeed: 50,
+            loop: true // Set loop to true to create an infinite loop
+          });
+    </script>
+    <script>
+        const sidebar=document.querySelector(".sidebar");
+        const image=document.querySelector(".img")
+        function showSidebar(){
+            sidebar.style.display="flex";
+            image.style.visibility="hidden";
+        }
+
+        function hideSidebar(){
+            sidebar.style.display="none";
+            image.style.visibility="visible";
+        }
+    </script>
+</body>
+
+</html>

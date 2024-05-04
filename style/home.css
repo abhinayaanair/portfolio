@@ -1,0 +1,220 @@
+.main{
+    width:inherit;
+    height:inherit;
+  
+    overflow-x:hidden;
+    display: flex;
+    background-color:rgb(17,17,17);
+    color: white;
+}
+
+.img-div{
+    width:40%;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img{
+    z-index:0;
+    margin: auto ;
+    border-radius: 25px;
+    height:90%;
+    margin-left: 3.5rem;
+    box-shadow: -10px 10px 10px rgb(20, 20, 20);
+    object-fit: cover;
+}
+
+.yellowtrapez{
+    position: absolute;
+    z-index:0;
+    height:100vh;
+    width:30%;
+}
+
+.home-text-div{
+    color:white;
+    height:100vh;
+    width:50%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-text-div div{
+    font-family: "Poppins",sans-serif;
+   
+}
+
+.text-uppercase{
+    font-size:3.2rem;
+    line-height: 4rem;
+    color:#FFB400;
+}
+
+.text-uppercase span{
+    color:white;
+}
+.intro-flex{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+    margin-top: 9rem;
+}
+
+
+.hyphen{
+    font-size: 4rem;
+    margin-top: -1rem;
+    color:#FFB400;
+}
+
+.home-description{
+    width:70%;
+    font-size: 1rem;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.home-about-button{
+    width:70%;
+}
+
+.button{
+    text-decoration: none;
+    border: 1px solid #FFB400;
+    padding: 1rem 0rem 1rem 2rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+.arrow-icon{
+    color: white;
+    border: 2px solid #FFB400;
+    padding: 1rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    background-color: #FFB400;
+}
+
+
+#house{
+    color:white;
+    background-color: #FFB400;
+}
+
+#house-nav{
+    color:#FFB400;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 480px)  {
+    .main{
+        flex-direction: column;
+    }
+    .img-div{
+       width: 100%;
+       height: 50vh;
+       display: flex;
+       align-items: end;
+       justify-content: center;
+       object-fit: cover;
+       padding: 0.5rem;
+      
+    }
+    .yellowtrapez{
+        visibility: hidden;
+    }
+    .img{
+        z-index:1;
+        margin: 0;
+        width: 60%;
+        height: 70%;
+        border-radius: 50%;
+        border: 4px solid rgb(37,37,37);
+       
+      
+    }
+   .navigation-bar{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 20%;
+    height: 10vh;
+    display:flex;
+    margin-right: 0.5rem;
+    margin-top:0;
+   }
+   .sidebar{
+    z-index:999;
+   }
+   .hamburger-menu{
+    border:2px solid #1b1a1a;
+    color:white;
+    z-index:10;
+    font-size: 1.8rem;
+    padding: 0.6rem;
+    visibility: visible;
+    border-radius: 10%;
+    background-color: #1e1d1d;
+    margin-top: 0.5rem;
+    
+   }
+  .navigation-bar nav ul{
+   display: none;
+  }
+.navigation-bar nav ul li i {
+    color: white;
+    font-size: inherit;
+}
+    .home-text-div{
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+       
+    }
+    .text-uppercase{
+        font-size: 1.9rem;
+        line-height: 2.4rem;
+       
+    }
+    .hyphen{
+        margin: 0;
+        padding: 0;
+        display: none;
+      
+    }
+    .home-intro{
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .intro-flex{
+        margin: 0;
+        width: 100%;
+       text-align: center;
+        
+    }
+    .home-description{
+        font-size: 0.9rem;
+        margin-top: 2rem;
+        text-align: center;
+        width:100%;
+        line-height: 2rem;
+
+}
+.home-about-button{
+  width: 100%;
+}
+.button{
+    margin: 3.5rem;
+}
+}
