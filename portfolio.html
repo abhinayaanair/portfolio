@@ -111,7 +111,7 @@
         function changeIt(index,link) {
             const innerdiv = gridItems[index].querySelector(".inner-grid-div");
             
-            innerdiv.innerHTML = `<div style="display:flex;justify-content:center;align-item:center;margin-top:23%;"><a href="${link}" style="color:black;font-size:2rem;font-family:Poppins;text-decoration:none">CLICK</a></div>`;
+            innerdiv.innerHTML = `<a href="${link}"><div style="display:flex;justify-content:center;align-item:center;margin-top:23%;"><p  style="color:black;font-size:2rem;font-family:Poppins;text-decoration:none">CLICK</p></div></a>`;
             gridItems[index].style.backgroundColor = "#FFB400";
         }
   
