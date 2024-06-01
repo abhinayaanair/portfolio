@@ -52,9 +52,8 @@
                     <div class="textarea-div">
                         <textarea placeholder="Your message" name="" id="" cols="90" rows="10"></textarea>
                     </div>
-
-                    <button>
-                        Send Message <i class="fa-solid fa-paper-plane paper-plane"></i>
+                    <button onclick="clearForm()">
+                        Send Message <i class="fa-solid fa-paper-plane paper-plane send"></i>
                     </button>
                 </div>
             </div>
@@ -99,6 +98,15 @@
         function hideSidebar(){
             sidebar.style.display="none";
             image.style.visibility="visible";
+            
+        }
+
+
+        function clearForm() {
+            // Clear input fields
+            document.querySelectorAll('input[type="text"]').forEach(input => input.value = '');
+            // Clear textarea
+            document.querySelector('textarea').value = '';
         }
     </script>
 </body>
