@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color:rgb(17,17,17);
+}
 
 .main{
     width:100%;
-    /* height:150vh; */
+    height:130vh; 
     background-color:rgb(17,17,17);
     display: flex;
     color: white;
@@ -111,6 +114,10 @@
         box-sizing: border-box;
     }
 
+    .main{
+        height:130vh; 
+        margin-bottom: 5rem;
+    }
     .header{
        
         justify-content: start;
